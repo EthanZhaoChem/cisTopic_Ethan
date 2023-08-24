@@ -1,4 +1,4 @@
-Package: cisTopic
+Package: cisTopic_Ethan
 Type: Package
 Title: cisTopic: Probabilistic modelling of cis-regulatory topics from
         single cell epigenomics data

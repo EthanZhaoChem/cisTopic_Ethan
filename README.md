@@ -1,3 +1,6 @@
+## Ethan notes
+- changed default settings for .runWarpLDA_perTopic as convergence_tol = 0.001, n_check_convergence = 5
+
 ## News
 ### ***2019-12-20***:
 - cisTopic v3: Faster topic modelling based on WarpLDA (see vignettes for details).

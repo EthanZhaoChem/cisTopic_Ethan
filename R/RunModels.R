@@ -671,7 +671,7 @@ runWarpLDAModels <- function(
   return(object)
 }
 
-.runWarpLDA_perTopic <- function(input, n_topics, doc_topic_prior, topic_word_prior, n_iter, convergence_tol = 0.0001, n_check_convergence = 25, progressbar = FALSE, normalize='none', tmp=tmp){
+.runWarpLDA_perTopic <- function(input, n_topics, doc_topic_prior, topic_word_prior, n_iter, convergence_tol = 0.001, n_check_convergence = 5, progressbar = FALSE, normalize='none', tmp=tmp){
   lda_model <- LDA$new(n_topics = n_topics, doc_topic_prior = doc_topic_prior, topic_word_prior = topic_word_prior)
   doc_topic_distr <- lda_model$fit_transform(x = input, 
                                              n_iter = n_iter,
